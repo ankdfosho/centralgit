@@ -32,3 +32,39 @@ public class Main {
     }
 }
 
+	package com.codewithankur;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        // Reading Inputs like Age i.e a number : Create a Scanner which reads from terminal.
+        // Read i/p from terminal System.in
+        Scanner anObject = new Scanner(System.in);
+        //println adds a line, so remove 'ln'
+        System.out.print("Age:  ");
+        float Age = anObject.nextFloat();
+        System.out.println("Your Age is "+ Age);
+    }
+}
+
+—————————————
+
+package com.codewithankur;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        // For Reading Inputs like Name i.e a String : Create a Scanner Object.
+        Scanner anObject = new Scanner(System.in); //i.e for entry in terminal;
+        //println adds a line, so remove 'ln'
+        System.out.print("Name:  ");
+        String Name = anObject.nextLine().trim(); //To show full line, rather add anObject.nextLine(); And btw add .trim to the variable "Name"
+        System.out.println("Your Name is "+ Name);
+    }
+}
+
+
